@@ -3,6 +3,7 @@ import { Game } from "../hooks/useGames";
 import PlatformIconList from "./PlatformIconList";
 import CreticScore from "./CreticScore";
 import getCropedImageUrl from "../services/imageUrl";
+import { Emoji } from "./Emoji";
 
 interface Props {
 	game: Game;
@@ -23,6 +24,7 @@ function GameCard({ game }: Props) {
 				<Text marginTop={2}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sequi...
 				</Text>
+				<Emoji rating={game.rating_top} />
 			</CardBody>
 		</Card>
 	);
